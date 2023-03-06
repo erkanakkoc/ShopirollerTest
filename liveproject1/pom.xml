@@ -15,6 +15,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
+		
+		<username>erkanakkoc</username>
+		<password>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</password>
 	</properties>
 
 	<dependencies>
