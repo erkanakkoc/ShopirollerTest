@@ -50,7 +50,7 @@ public class AddRemoveItemBasketTest extends Hooks{
 
 		StoreHomepage storeHome = new StoreHomepage();
 		storeHome.getProdOne().click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		
 		StoreProductPage storeProd = new StoreProductPage();
 		
@@ -63,7 +63,7 @@ public class AddRemoveItemBasketTest extends Hooks{
 		storeProd.getQuantIncrease().click();
 		storeProd.getAddToCartBtn().click();
 		
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 
 		StoreContentPanel cPanel = new StoreContentPanel();
 	
