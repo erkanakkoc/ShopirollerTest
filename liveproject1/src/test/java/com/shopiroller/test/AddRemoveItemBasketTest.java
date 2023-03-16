@@ -38,14 +38,16 @@ public class AddRemoveItemBasketTest extends Hooks{
 		
 		home.getLoginLink().click();
 		
+		
 		StoreLoginPage loginPage = new StoreLoginPage();
 		loginPage.getSinginEmail().sendKeys("erkan.akkoc@mobiroller.com");
 		loginPage.getSinginPassword().sendKeys("123456");
 		loginPage.getSinginBtn().click();
 		
+		
 		UserProfilePage userProfilePage = new UserProfilePage();
 		userProfilePage.getHomepageLink().click();
-		
+
 		StoreHomepage storeHome = new StoreHomepage();
 		storeHome.getProdOne().click();
 		Thread.sleep(1000);
@@ -62,8 +64,10 @@ public class AddRemoveItemBasketTest extends Hooks{
 		storeProd.getAddToCartBtn().click();
 		
 		Thread.sleep(1000);
-		
+
 		StoreContentPanel cPanel = new StoreContentPanel();
+	
+
 		cPanel.getContinueShopBtn().click();
 		
 		storeProd.getHomepageLink().click();
@@ -83,5 +87,7 @@ public class AddRemoveItemBasketTest extends Hooks{
 		//Assert.assertEquals(cPanel.getTotalValue().getText(), "566.18547 ₺");
 		
 	}
+	
+	
 
 }
