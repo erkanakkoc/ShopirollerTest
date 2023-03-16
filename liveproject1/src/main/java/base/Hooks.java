@@ -18,7 +18,6 @@ public class Hooks extends BasePage{
 	
 	@AfterTest
 	public void tearDown() {
-		System.out.println();
 		WebDriverInstance.cleanupDriver();
 	}
 
