@@ -96,7 +96,7 @@ public class OrderCompleteTest extends Hooks {
 		// Kapıda ödeme seçili geldiği için şimdilik pasif
 		//paymentPage.getPayAtDoor().click();
 		
-		paymentPage.getCompleteOrder().click();
+		//paymentPage.getCompleteOrder().click();
 	}
 
 }

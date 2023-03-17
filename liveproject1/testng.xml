@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests" thread-count="2">
-  <test thread-count="5" name="Test" >
+<suite name="EndToEndTest" parallel="tests" thread-count="3">
+  <test thread-count="5" name="AddRemoveItem" >
     <classes>
       <class name="com.shopiroller.test.AddRemoveItemBasketTest"/>
     </classes>
   </test> <!-- Test -->
   
-    <test thread-count="5" name="Test2">
+    <test thread-count="5" name="OrderComplete">
     <classes>
       <class name="com.shopiroller.test.OrderCompleteTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="AllureReport">
+    <classes>
+      <class name="com.shopiroller.test.AllureReportTest"/>
     </classes>
   </test> <!-- Test -->
   
