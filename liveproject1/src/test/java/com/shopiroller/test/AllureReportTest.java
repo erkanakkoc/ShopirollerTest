@@ -3,7 +3,10 @@ package com.shopiroller.test;
 import java.io.IOException;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+import com.google.common.util.concurrent.Service.Listener;
 
 import base.Hooks;
 import io.qameta.allure.Allure;
@@ -14,6 +17,7 @@ import pageObjects.StoreLoginPage;
 import pageObjects.StoreProductPage;
 import pageObjects.UserProfilePage;
 
+@Listeners(resources.Listeners.class)
 public class AllureReportTest extends Hooks {
 
 	public AllureReportTest() throws IOException {
@@ -28,7 +32,7 @@ public class AllureReportTest extends Hooks {
 		//jse.executeScript("arguments[0].scrollIntoView()", home.getLoginLink()); 
 		
 		home.getLoginLink().click();
-		Allure.step("Login sayfasına geçildi");
+		Allure.step("Giriş sayfasına geçildi");
 		
 		StoreLoginPage loginPage = new StoreLoginPage();
 		loginPage.getSinginEmail().sendKeys("erkan.akkoc@mobiroller.com");

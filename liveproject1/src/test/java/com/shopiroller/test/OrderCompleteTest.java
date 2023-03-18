@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import base.BasePage;
 import base.Hooks;
+import io.qameta.allure.Allure;
 import pageObjects.Homepage;
 import pageObjects.PaymentPage;
 import pageObjects.StoreContentPanel;
@@ -36,17 +37,19 @@ public class OrderCompleteTest extends Hooks {
 		//jse.executeScript("arguments[0].scrollIntoView()", home.getLoginLink()); 
 		
 		home.getLoginLink().click();
-		
+		Allure.step("Giriş sayfasına geçildi");
 		StoreLoginPage loginPage = new StoreLoginPage();
 		loginPage.getSinginEmail().sendKeys("erkan.akkoc@mobiroller.com");
 		loginPage.getSinginPassword().sendKeys("123456");
 		loginPage.getSinginBtn().click();
+		Allure.step("Hesaba giriş yapıldı");
 		
 		UserProfilePage userProfilePage = new UserProfilePage();
 		userProfilePage.getHomepageLink().click();
 		
 		StoreHomepage storeHome = new StoreHomepage();
 		storeHome.getProdOne().click();
+		Allure.step("Ürün seçildi");
 		Thread.sleep(2000);
 		
 		StoreProductPage storeProd = new StoreProductPage();
@@ -58,8 +61,9 @@ public class OrderCompleteTest extends Hooks {
 		*/
 		
 		storeProd.getQuantIncrease().click();
+		Allure.step("Ürün sayısı arttırıldı");
 		storeProd.getAddToCartBtn().click();
-		
+		Allure.step("Ürün sepete eklendi");
 		Thread.sleep(3000);
 		
 		StoreContentPanel cPanel = new StoreContentPanel();
@@ -72,6 +76,7 @@ public class OrderCompleteTest extends Hooks {
 		*/
 		
 		cPanel.getCheckoutBtn().click();
+		Allure.step("Ödeme sayfasına geçildi");
 		Thread.sleep(3000);
 		
 		PaymentPage paymentPage = new PaymentPage();
@@ -83,6 +88,7 @@ public class OrderCompleteTest extends Hooks {
 		paymentPage.getBillingCityField().sendKeys("İzmir");
 		paymentPage.getBillingAddressField().sendKeys("Test Adresi");
 		paymentPage.getBillingZipCodeField().sendKeys("35510");
+		Allure.step("Fatura bilgisi girildi");
 		
 		paymentPage.getShippingNameField().sendKeys("Erkan Akkoç");
 		paymentPage.getShippingPhoneField().sendKeys("05547085086");
@@ -92,11 +98,15 @@ public class OrderCompleteTest extends Hooks {
 		paymentPage.getShippingCityField().sendKeys("İzmir");
 		paymentPage.getShippingAddressField().sendKeys("Test Adresi");
 		paymentPage.getShippingZipCodeField().sendKeys("35510");
+		Allure.step("Kargo bilgisi girildi");
+		
 		Thread.sleep(2000);
+		
 		// Kapıda ödeme seçili geldiği için şimdilik pasif
 		//paymentPage.getPayAtDoor().click();
 		
-		//paymentPage.getCompleteOrder().click();
+		paymentPage.getCompleteOrder().click();
+		Allure.step("Sipariş tamamlandı");
 	}
 
 }

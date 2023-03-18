@@ -87,9 +87,9 @@ public class BasePage {
 		return new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date());
 	}
 	
-	public static void waitForElementInvisible(WebElement element, int timer) throws IOException {
+	/*public static void waitForElementInvisible(WebElement element, int timer) throws IOException {
 		WebDriverWait wait = new WebDriverWait(getDriver(), timer);
 		wait.until(ExpectedConditions.invisibilityOf(element));
 	}
-
+*/
 }

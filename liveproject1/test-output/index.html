@@ -155,8 +155,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-QN4QNHH&apos;, ip: &apos;192.168.1.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\ERKANM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51662}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b190fc2212eefa964a555d509c0cd912
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\ERKANM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53998}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f642005d4891c0524be9c8f1b9e8a66b
 *** Element info: {Using=css selector, value=.icon-plus}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -169,7 +169,7 @@ Session ID: b190fc2212eefa964a555d509c0cd912
 	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at pageObjects.StoreProductPage.getQuantIncrease(StoreProductPage.java:32)
-	at com.shopiroller.test.AllureReportTest.AllureTest(AllureReportTest.java:73)
+	at com.shopiroller.test.AllureReportTest.AllureTest(AllureReportTest.java:77)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
@@ -283,20 +283,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'AllureTest')
 data.setCell(0, 2, 'com.shopiroller.test.AllureReportTest')
-data.setCell(0, 3, 20870);
+data.setCell(0, 3, 21254);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'endToEndTest')
 data.setCell(1, 2, 'com.shopiroller.test.OrderCompleteTest')
-data.setCell(1, 3, 17562);
+data.setCell(1, 3, 18119);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'addRemoveItem')
 data.setCell(2, 2, 'com.shopiroller.test.AddRemoveItemBasketTest')
-data.setCell(2, 3, 14656);
+data.setCell(2, 3, 15309);
 window.suiteTableData['EndToEndTest']= { tableData: data, tableDiv: 'times-div-EndToEndTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
               <div id="times-div-EndToEndTest">
               </div> <!-- times-div-EndToEndTest -->
             </div> <!-- times-div -->
@@ -329,55 +329,61 @@ return data;
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.shopiroller.test.OrderCompleteTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.shopiroller.test.AllureReportTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.shopiroller.test.AllureReportTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.shopiroller.test.OrderCompleteTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">6 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.shopiroller.test.AddRemoveItemBasketTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addRemoveItem</span>
+                <span class="method-start">2000 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.shopiroller.test.AllureReportTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">AllureTest</span>
-                <span class="method-start">2616 ms</span>
+                <span class="method-start">2191 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.shopiroller.test.OrderCompleteTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">endToEndTest</span>
-                <span class="method-start">2701 ms</span>
+                <span class="method-start">2194 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.shopiroller.test.AddRemoveItemBasketTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">addRemoveItem</span>
-                <span class="method-start">2720 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">17424 ms</span>
+                <span class="method-start">17387 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.shopiroller.test.OrderCompleteTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20275 ms</span>
+                <span class="method-start">20323 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.shopiroller.test.AllureReportTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">23494 ms</span>
+                <span class="method-start">24115 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
