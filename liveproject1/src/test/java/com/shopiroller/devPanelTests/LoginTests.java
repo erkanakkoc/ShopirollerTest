@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 import base.BasePage;
 import base.HooksPanel;
+import io.qameta.allure.Allure;
 import pageObjectsPanel.PanelHomepage;
 import pageObjectsPanel.PanelLoginPage;
 import pageObjectsPanel.homepageButtons.PanelProfileBtn;
@@ -30,7 +31,7 @@ public class LoginTests extends HooksPanel{
 		login.getSinginEmail().sendKeys("erkan.akkoc@mobiroller.com");
 		login.getSinginPassword().sendKeys("Test1234");
 		login.getSinginBtn().click();
-		
+		Allure.step("Doğru kullanıcı bilgileri girilip, giriş butonuna tıklandı");
 		Thread.sleep(1000);
 		
 		if(base.getPanelMessageTRText().equals(homepage.getPanelMessage().getText())) {
@@ -44,10 +45,13 @@ public class LoginTests extends HooksPanel{
 			Assert.assertTrue(false);
 		}
 		
+		Allure.step("Giriş başarılı oldu. Ekranda görünen yazı: " + homepage.getPanelMessage().getText());
+		
 		homepage.getProfileBtn().click();
 		
 		PanelProfileBtn profile = new PanelProfileBtn();
 		profile.getLogoutBtn().click();
+		Allure.step("Çıkış butonuna tıklandı.");
 		Thread.sleep(1000);
 	}
 	
@@ -59,6 +63,7 @@ public class LoginTests extends HooksPanel{
 		login.getSinginPassword().clear();
 		login.getSinginPassword().sendKeys("Test1234");
 		login.getSinginBtn().click();
+		Allure.step("Yanlış Email adres ve Doğru şifre girilip, giriş butonuna tıklandı");
 		
 		Thread.sleep(2000);
 		
@@ -72,6 +77,8 @@ public class LoginTests extends HooksPanel{
 			System.out.println("Error");
 			Assert.assertTrue(false);
 		}
+		Allure.step("Gelen hata mesajı kontrol edildi. Hata Mesajı: " + login.getInvalidEmailAndPassword().getText());
+		
 	}
 	
 	
@@ -82,7 +89,7 @@ public class LoginTests extends HooksPanel{
 		login.getSinginPassword().clear();
 		login.getSinginPassword().sendKeys("test1234");
 		login.getSinginBtn().click();
-	
+		Allure.step("Geçersiz Email adres ve Doğru şifre bilgileri girilip, giriş butonuna tıklandı");
 		Thread.sleep(1000);	
 
 		if(base.getInvalidEmailTRText().equals(login.getInvalidEmail().getText())) {
@@ -95,6 +102,8 @@ public class LoginTests extends HooksPanel{
 			System.out.println("Error");
 			Assert.assertTrue(false);
 		}			
+		
+		Allure.step("Gelen hata mesajı kontrol edildi. Hata Mesajı: " + login.getInvalidEmail().getText());
 	}
 	
 	
@@ -105,7 +114,8 @@ public class LoginTests extends HooksPanel{
 		login.getSinginPassword().clear();
 		login.getSinginPassword().sendKeys("123456");
 		login.getSinginBtn().click();
-		
+		Allure.step("Doğru Email adres ve Yanlış şifre bilgileri girilip, giriş butonuna tıklandı");
+
 		Thread.sleep(1000);
 		
 		if(base.getInvalidEmailAndPasswordTRText().equals(login.getInvalidEmailAndPassword().getText())) {
@@ -118,6 +128,7 @@ public class LoginTests extends HooksPanel{
 			System.out.println("Error");
 			Assert.assertTrue(false);
 		}		
+		Allure.step("Gelen hata mesajı kontrol edildi. Hata Mesajı: " + login.getInvalidEmailAndPassword().getText());
 	}
 	
 	@Test (priority = 5)
@@ -127,7 +138,8 @@ public class LoginTests extends HooksPanel{
 		login.getSinginPassword().clear();
 		login.getSinginPassword().sendKeys("123456");
 		login.getSinginBtn().click();		
-		
+		Allure.step("Yanlış Email adres ve Yanlış şifre bilgileri girilip, giriş butonuna tıklandı");
+
 		Thread.sleep(2000);
 		
 		if(base.getInvalidEmailAndPasswordTRText().equals(login.getInvalidEmailAndPassword().getText())) {
@@ -140,6 +152,7 @@ public class LoginTests extends HooksPanel{
 			System.out.println("Error");
 			Assert.assertTrue(false);
 		}
+		Allure.step("Gelen hata mesajı kontrol edildi. Hata Mesajı: " + login.getInvalidEmailAndPassword().getText());
 	}
 
 
