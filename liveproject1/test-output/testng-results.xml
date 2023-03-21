@@ -1,122 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-18T04:00:18 TRT" name="EndToEndTest" finished-at="2023-03-18T04:00:44 TRT" duration-ms="25739">
+  <suite started-at="2023-03-21T05:00:46 TRT" name="Default suite" finished-at="2023-03-21T05:01:02 TRT" duration-ms="15789">
     <groups>
     </groups>
-    <test started-at="2023-03-18T04:00:18 TRT" name="AddRemoveItem" finished-at="2023-03-18T04:00:37 TRT" duration-ms="19027">
-      <class name="com.shopiroller.test.AddRemoveItemBasketTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.shopiroller.test.AddRemoveItemBasketTest@41c204a0]" started-at="2023-03-18T04:00:19 TRT" name="setup" finished-at="2023-03-18T04:00:21 TRT" duration-ms="1980" status="PASS">
+    <test started-at="2023-03-21T05:00:46 TRT" name="Default test" finished-at="2023-03-21T05:01:02 TRT" duration-ms="15789">
+      <class name="com.shopiroller.devPanelTests.LoginTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.shopiroller.devPanelTests.LoginTests@65ae095c]" started-at="2023-03-21T05:00:47 TRT" name="setup" finished-at="2023-03-21T05:00:53 TRT" duration-ms="5250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addRemoveItem()[pri:0, instance:com.shopiroller.test.AddRemoveItemBasketTest@41c204a0]" started-at="2023-03-18T04:00:21 TRT" name="addRemoveItem" finished-at="2023-03-18T04:00:37 TRT" duration-ms="15309" status="PASS">
+        <test-method signature="LoginSuccessfully()[pri:1, instance:com.shopiroller.devPanelTests.LoginTests@65ae095c]" started-at="2023-03-21T05:00:53 TRT" name="LoginSuccessfully" finished-at="2023-03-21T05:00:55 TRT" duration-ms="2390" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addRemoveItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shopiroller.test.AddRemoveItemBasketTest@41c204a0]" started-at="2023-03-18T04:00:37 TRT" name="tearDown" finished-at="2023-03-18T04:00:37 TRT" duration-ms="94" status="PASS">
+        </test-method> <!-- LoginSuccessfully -->
+        <test-method signature="LoginWithWrongEmail()[pri:2, instance:com.shopiroller.devPanelTests.LoginTests@65ae095c]" started-at="2023-03-21T05:00:55 TRT" name="LoginWithWrongEmail" finished-at="2023-03-21T05:00:57 TRT" duration-ms="2204" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.shopiroller.test.AddRemoveItemBasketTest -->
-    </test> <!-- AddRemoveItem -->
-    <test started-at="2023-03-18T04:00:18 TRT" name="OrderComplete" finished-at="2023-03-18T04:00:40 TRT" duration-ms="21976">
-      <class name="com.shopiroller.test.OrderCompleteTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.shopiroller.test.OrderCompleteTest@749ab7b4]" started-at="2023-03-18T04:00:19 TRT" name="setup" finished-at="2023-03-18T04:00:22 TRT" duration-ms="2187" status="PASS">
+        </test-method> <!-- LoginWithWrongEmail -->
+        <test-method signature="LoginWithInvalidEmail()[pri:3, instance:com.shopiroller.devPanelTests.LoginTests@65ae095c]" started-at="2023-03-21T05:00:57 TRT" name="LoginWithInvalidEmail" finished-at="2023-03-21T05:00:59 TRT" duration-ms="1168" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="endToEndTest()[pri:0, instance:com.shopiroller.test.OrderCompleteTest@749ab7b4]" started-at="2023-03-18T04:00:22 TRT" name="endToEndTest" finished-at="2023-03-18T04:00:40 TRT" duration-ms="18119" status="PASS">
+        </test-method> <!-- LoginWithInvalidEmail -->
+        <test-method signature="LoginWithWrongPassword()[pri:4, instance:com.shopiroller.devPanelTests.LoginTests@65ae095c]" started-at="2023-03-21T05:00:59 TRT" name="LoginWithWrongPassword" finished-at="2023-03-21T05:01:00 TRT" duration-ms="1163" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endToEndTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shopiroller.test.OrderCompleteTest@749ab7b4]" started-at="2023-03-18T04:00:40 TRT" name="tearDown" finished-at="2023-03-18T04:00:40 TRT" duration-ms="107" status="PASS">
+        </test-method> <!-- LoginWithWrongPassword -->
+        <test-method signature="LoginWithWrongEmailAndPassword()[pri:5, instance:com.shopiroller.devPanelTests.LoginTests@65ae095c]" started-at="2023-03-21T05:01:00 TRT" name="LoginWithWrongEmailAndPassword" finished-at="2023-03-21T05:01:02 TRT" duration-ms="2154" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.shopiroller.test.OrderCompleteTest -->
-    </test> <!-- OrderComplete -->
-    <test started-at="2023-03-18T04:00:18 TRT" name="AllureReport" finished-at="2023-03-18T04:00:44 TRT" duration-ms="25739">
-      <class name="com.shopiroller.test.AllureReportTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.shopiroller.test.AllureReportTest@1ba05e38]" started-at="2023-03-18T04:00:19 TRT" name="setup" finished-at="2023-03-18T04:00:22 TRT" duration-ms="2190" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="AllureTest()[pri:0, instance:com.shopiroller.test.AllureReportTest@1ba05e38]" started-at="2023-03-18T04:00:22 TRT" name="AllureTest" finished-at="2023-03-18T04:00:43 TRT" duration-ms="21254" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".icon-plus"}
-  (Session info: chrome=111.0.5563.65)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-QN4QNHH', ip: '192.168.1.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\ERKANM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53998}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f642005d4891c0524be9c8f1b9e8a66b
-*** Element info: {Using=css selector, value=.icon-plus}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".icon-plus"}
-  (Session info: chrome=111.0.5563.65)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-QN4QNHH', ip: '192.168.1.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\ERKANM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53998}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f642005d4891c0524be9c8f1b9e8a66b
-*** Element info: {Using=css selector, value=.icon-plus}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at pageObjects.StoreProductPage.getQuantIncrease(StoreProductPage.java:32)
-at com.shopiroller.test.AllureReportTest.AllureTest(AllureReportTest.java:77)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AllureTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shopiroller.test.AllureReportTest@1ba05e38]" started-at="2023-03-18T04:00:43 TRT" name="tearDown" finished-at="2023-03-18T04:00:44 TRT" duration-ms="78" status="PASS">
+        </test-method> <!-- LoginWithWrongEmailAndPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shopiroller.devPanelTests.LoginTests@65ae095c]" started-at="2023-03-21T05:01:02 TRT" name="tearDown" finished-at="2023-03-21T05:01:02 TRT" duration-ms="68" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.shopiroller.test.AllureReportTest -->
-    </test> <!-- AllureReport -->
-  </suite> <!-- EndToEndTest -->
+      </class> <!-- com.shopiroller.devPanelTests.LoginTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

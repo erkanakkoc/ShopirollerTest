@@ -26,6 +26,7 @@ public class BasePage {
 	private String url;
 	private String storeUrl, devStoreUrl, panelUrl, devPanelUrl;
 	private Properties prop;
+	private String invalidEmailTR,invalidEmailEN,invalidEmailAndPasswordTR,invalidEmailAndPasswordEN,panelMessageTR,panelMessageEN;
 
 	public BasePage() throws IOException {
 		prop = new Properties();
@@ -75,6 +76,38 @@ public class BasePage {
 		return devPanelUrl;
 
 	}
+	
+	//Login Sistem Mesajları
+	public String getInvalidEmailTRText() throws IOException {
+		invalidEmailTR = "E-posta geçersiz";
+		return invalidEmailTR;
+	}
+	public String getInvalidEmailENText() throws IOException {
+		invalidEmailEN = "Email is invalid";
+		return invalidEmailEN;
+	}
+	public String getInvalidEmailAndPasswordTRText() throws IOException {
+		invalidEmailAndPasswordTR = "Oops! Kullanıcı adınız veya şifreniz yanlış.";
+		return invalidEmailAndPasswordTR;
+	}
+	public String getInvalidEmailAndPasswordENText() throws IOException {
+		invalidEmailAndPasswordEN = "Whoops! Your username or password is incorrect.";
+		return invalidEmailAndPasswordEN;
+	}
+	
+	
+	public String getPanelMessageTRText() throws IOException{
+		panelMessageTR = "Burada olduğun için mutluyuz. Hadi projelerine göz atalım.";
+		return panelMessageTR;
+	}
+	
+	public String getPanelMessageENText() throws IOException{
+		panelMessageEN = "We are happy to be here. Have a nice day at work";
+		return panelMessageEN;
+	}
+	
+	
+	
 
 	public void takeSnapShot(String name) throws IOException {
 		File srcFile = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
